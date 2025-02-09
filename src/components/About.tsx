@@ -1,12 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  Clock,
-  Facebook,
-  Instagram,
-  Twitter,
-  MessageCircle,
-} from "lucide-react";
+import { Clock, Facebook, Instagram, Twitter } from "lucide-react";
 
 const About = () => {
   const hours = [

@@ -1,0 +1,22 @@
+{
+  "Appetizers": [
+    {
+      "foodName": "Spring Rolls",
+      "description": "Crispy rolls filled with vegetables and mushrooms"
+    },
+    {
+      "foodName": "Dim Sum Platter",
+      "description": "Assorted steamed dumplings"
+    }
+  ],
+  "Main Courses": [
+    {
+      "foodName": "Kung Pao Chicken",
+      "description": "Spicy diced chicken with peanuts and vegetables"
+    },
+    {
+      "foodName": "Mapo Tofu",
+      "description": "Soft tofu in spicy sauce with minced pork"
+    }
+  ]
+}

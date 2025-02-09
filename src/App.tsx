@@ -1,11 +1,13 @@
-import React from 'react';
-import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import About from './components/About';
-import Menu from './components/Menu';
-import Delivery from './components/Delivery';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import React from "react";
+import Navigation from "./components/Navigation";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Menu from "./components/Menu";
+import Delivery from "./components/Delivery";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { I18nextProvider } from "react-i18next";
+import i18n from "../i18n.ts";
 
 function App() {
   return (
