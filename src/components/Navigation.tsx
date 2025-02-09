@@ -29,7 +29,7 @@ const Navigation = () => {
             className="flex items-center space-x-2 text-2xl font-bold text-red-600"
           >
             <img src={redDragonLogo} className="w-10 h-8" />
-            <span>Golden Dragon</span>
+            <span>Red Dragon</span>
           </motion.div>
 
           {/* Desktop Menu */}
