@@ -1,10 +1,14 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin } from 'lucide-react';
-import { useForm } from 'react-hook-form';
+import React from "react";
+import { motion } from "framer-motion";
+import { Phone, Mail, MapPin } from "lucide-react";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   const onSubmit = (data: any) => {
     console.log(data);
@@ -45,14 +49,16 @@ const Contact = () => {
               <Mail className="w-6 h-6 text-red-600" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                <p className="text-gray-600">info@goldendragon.com</p>
+                <p className="text-gray-600">info@Reddragon.com</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <MapPin className="w-6 h-6 text-red-600" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">Address</h3>
-                <p className="text-gray-600">123 Dragon Street, Chinatown, NY 10013</p>
+                <p className="text-gray-600">
+                  123 Dragon Street, Chinatown, NY 10013
+                </p>
               </div>
             </div>
           </motion.div>
@@ -66,34 +72,62 @@ const Contact = () => {
           >
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Name
+                </label>
                 <input
                   type="text"
                   id="name"
-                  {...register('name', { required: true })}
+                  {...register("name", { required: true })}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500"
                 />
-                {errors.name && <span className="text-red-600 text-sm">Name is required</span>}
+                {errors.name && (
+                  <span className="text-red-600 text-sm">Name is required</span>
+                )}
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Email
+                </label>
                 <input
                   type="email"
                   id="email"
-                  {...register('email', { required: true, pattern: /^\S+@\S+$/i })}
+                  {...register("email", {
+                    required: true,
+                    pattern: /^\S+@\S+$/i,
+                  })}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500"
                 />
-                {errors.email && <span className="text-red-600 text-sm">Valid email is required</span>}
+                {errors.email && (
+                  <span className="text-red-600 text-sm">
+                    Valid email is required
+                  </span>
+                )}
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Message
+                </label>
                 <textarea
                   id="message"
                   rows={4}
-                  {...register('message', { required: true })}
+                  {...register("message", { required: true })}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500"
                 />
-                {errors.message && <span className="text-red-600 text-sm">Message is required</span>}
+                {errors.message && (
+                  <span className="text-red-600 text-sm">
+                    Message is required
+                  </span>
+                )}
               </div>
               <motion.button
                 whileHover={{ scale: 1.05 }}

@@ -1,18 +1,19 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import redDragonLogo from "../assets/images/red-dragon-logo.webp";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const menuItems = ['Home', 'About', 'Menu', 'Delivery', 'Contact'];
+  const menuItems = ["Home", "About", "Menu", "Delivery", "Contact"];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId.toLowerCase());
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
     }
     setIsOpen(false);
@@ -25,9 +26,10 @@ const Navigation = () => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-2xl font-bold text-red-600"
+            className="flex items-center space-x-2 text-2xl font-bold text-red-600"
           >
-            Golden Dragon
+            <img src={redDragonLogo} className="w-10 h-8" />
+            <span>Golden Dragon</span>
           </motion.div>
 
           {/* Desktop Menu */}

@@ -1,18 +1,24 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Clock, Facebook, Instagram, Twitter, MessageCircle } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  Clock,
+  Facebook,
+  Instagram,
+  Twitter,
+  MessageCircle,
+} from "lucide-react";
 
 const About = () => {
   const hours = [
-    { day: 'Monday - Friday', time: '11:00 AM - 10:00 PM' },
-    { day: 'Saturday', time: '12:00 PM - 11:00 PM' },
-    { day: 'Sunday', time: '12:00 PM - 9:00 PM' }
+    { day: "Monday - Friday", time: "11:00 AM - 10:00 PM" },
+    { day: "Saturday", time: "12:00 PM - 11:00 PM" },
+    { day: "Sunday", time: "12:00 PM - 9:00 PM" },
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' }
+    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Twitter, href: "#", label: "Twitter" },
   ];
 
   return (
@@ -27,7 +33,8 @@ const About = () => {
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Serving authentic Chinese cuisine since 1985, Golden Dragon brings the flavors of China to New York City.
+            Serving authentic Chinese cuisine since 1985, Red Dragon brings the
+            flavors of China to New York City.
           </p>
         </motion.div>
 
@@ -43,7 +50,9 @@ const About = () => {
             <div className="flex items-center justify-center mb-4">
               <Clock className="w-8 h-8 text-red-600" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Opening Hours</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
+              Opening Hours
+            </h3>
             <div className="space-y-2">
               {hours.map(({ day, time }) => (
                 <div key={day} className="text-gray-600">
@@ -62,7 +71,9 @@ const About = () => {
             viewport={{ once: true }}
             className="bg-white p-6 rounded-lg shadow-lg"
           >
-            <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">Connect With Us</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">
+              Connect With Us
+            </h3>
             <div className="flex justify-center space-x-6">
               {socialLinks.map(({ icon: Icon, href, label }) => (
                 <motion.a
@@ -89,9 +100,13 @@ const About = () => {
             <div className="flex items-center justify-center mb-4">
               <MessageCircle className="w-8 h-8 text-red-600" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Customer Reviews</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
+              Customer Reviews
+            </h3>
             <div className="space-y-4">
-              <p className="text-gray-600 italic">"Best dim sum in the city! Authentic flavors and great service."</p>
+              <p className="text-gray-600 italic">
+                "Best dim sum in the city! Authentic flavors and great service."
+              </p>
               <p className="text-gray-500 text-sm">- John D.</p>
             </div>
           </motion.div>

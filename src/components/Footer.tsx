@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,8 +13,10 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-xl font-bold mb-4">Golden Dragon</h3>
-            <p className="text-gray-400">Authentic Chinese cuisine since 1985</p>
+            <h3 className="text-xl font-bold mb-4">Red Dragon</h3>
+            <p className="text-gray-400">
+              Authentic Chinese cuisine since 1985
+            </p>
           </motion.div>
 
           <motion.div
@@ -42,7 +44,7 @@ const Footer = () => {
               <li>123 Dragon Street</li>
               <li>Chinatown, NY 10013</li>
               <li>(555) 123-4567</li>
-              <li>info@goldendragon.com</li>
+              <li>info@Reddragon.com</li>
             </ul>
           </motion.div>
 
@@ -89,7 +91,10 @@ const Footer = () => {
           viewport={{ once: true }}
           className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400"
         >
-          <p>&copy; {new Date().getFullYear()} Golden Dragon Restaurant. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Red Dragon Restaurant. All rights
+            reserved.
+          </p>
         </motion.div>
       </div>
     </footer>

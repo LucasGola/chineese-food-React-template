@@ -1,10 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { MapPin, ArrowRight } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { MapPin, ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-red-50 to-white pt-16">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-red-50 to-white pt-16"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <motion.div
@@ -13,7 +16,7 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-              Golden Dragon
+              Red Dragon
               <span className="text-red-600">Restaurant</span>
             </h1>
             <div className="flex items-center text-gray-600 mb-6">
@@ -29,7 +32,7 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5" />
             </motion.button>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
