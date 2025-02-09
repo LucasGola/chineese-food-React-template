@@ -38,7 +38,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Opening Hours */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -89,26 +89,24 @@ const About = () => {
             </div>
           </motion.div>
 
-          {/* Messages */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-white p-6 rounded-lg shadow-lg"
+            className="col-span-2 bg-white p-6 rounded-lg shadow-lg min-h-[450px]"
           >
-            <div className="flex items-center justify-center mb-4">
-              <MessageCircle className="w-8 h-8 text-red-600" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
-              Customer Reviews
+            <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">
+              Location
             </h3>
-            <div className="space-y-4">
-              <p className="text-gray-600 italic">
-                "Best dim sum in the city! Authentic flavors and great service."
-              </p>
-              <p className="text-gray-500 text-sm">- John D.</p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46902.47771744541!2d-80.19423692149226!3d25.928772705201457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9adb76345cf11%3A0xcfa42bdfe177ce36!2sHouse%20Of%20Chang%20Take%20Out!5e0!3m2!1spt-BR!2sbr!4v1739137112954!5m2!1spt-BR!2sbr"
+              width="100%"
+              className="min-h-[400px] border:0;"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </motion.div>
         </div>
       </div>
