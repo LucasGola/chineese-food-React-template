@@ -1,8 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,9 +17,7 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-xl font-bold mb-4">Red Dragon</h3>
-            <p className="text-gray-400">
-              Authentic Chinese cuisine since 1985
-            </p>
+            <p className="text-gray-400">{t("footerAbout")}</p>
           </motion.div>
 
           <motion.div
@@ -27,9 +28,9 @@ const Footer = () => {
           >
             <h3 className="text-xl font-bold mb-4">Hours</h3>
             <ul className="text-gray-400 space-y-2">
-              <li>Mon-Fri: 11:00 AM - 10:00 PM</li>
-              <li>Sat: 12:00 PM - 11:00 PM</li>
-              <li>Sun: 12:00 PM - 9:00 PM</li>
+              <li>{t("footerHoursText.text1")}</li>
+              <li>{t("footerHoursText.text2")}</li>
+              <li>{t("footerHoursText.text3")}</li>
             </ul>
           </motion.div>
 
@@ -39,7 +40,7 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-xl font-bold mb-4">Contact</h3>
+            <h3 className="text-xl font-bold mb-4">{t("contact")}</h3>
             <ul className="text-gray-400 space-y-2">
               <li>123 Dragon Street</li>
               <li>Chinatown, NY 10013</li>
@@ -54,7 +55,9 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-xl font-bold mb-4">Follow Us</h3>
+            <h3 className="text-xl font-bold mb-4">
+              {t("footerConnectionsTitle")}
+            </h3>
             <div className="flex space-x-4">
               <motion.a
                 whileHover={{ scale: 1.1 }}
@@ -91,10 +94,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400"
         >
-          <p>
-            &copy; {new Date().getFullYear()} Red Dragon Restaurant. All rights
-            reserved.
-          </p>
+          <p>&copy; {t("footerRights")}</p>
         </motion.div>
       </div>
     </footer>

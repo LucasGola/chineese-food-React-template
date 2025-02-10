@@ -4,8 +4,10 @@ import { ExternalLink } from "lucide-react";
 import uberLogo from "../assets/images/uber-eats.svg";
 import doordashLogo from "../assets/images/DoorDash_Logo.svg.png";
 import grubhubLogo from "../assets/images//grubhub-logo-4.png";
+import { useTranslation } from "react-i18next";
 
 const Delivery = () => {
+  const { t } = useTranslation();
   const deliveryApps = [
     {
       name: "UberEats",
@@ -35,11 +37,9 @@ const Delivery = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Order Delivery
+            {t("deliveryTitle")}
           </h2>
-          <p className="text-lg text-gray-600">
-            Get your favorite dishes delivered to your doorstep
-          </p>
+          <p className="text-lg text-gray-600">{t("deliveryText")}</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

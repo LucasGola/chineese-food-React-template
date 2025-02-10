@@ -1,8 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { MapPin, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -17,18 +20,18 @@ const Hero = () => {
           >
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
               Red Dragon
-              <span className="text-red-600"> Restaurant</span>
+              <span className="text-red-600">{t("restaurant")}</span>
             </h1>
             <div className="flex items-center text-gray-600 mb-6">
               <MapPin className="w-5 h-5 mr-2" />
-              <p>123 Dragon Street, Chinatown, NY 10013</p>
+              <p>{t("location")}</p>
             </div>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-red-600 text-white px-8 py-3 rounded-full flex items-center space-x-2 hover:bg-red-700 transition-colors"
             >
-              <span>Order Now</span>
+              <span>{t("order")}</span>
               <ArrowRight className="w-5 h-5" />
             </motion.button>
           </motion.div>

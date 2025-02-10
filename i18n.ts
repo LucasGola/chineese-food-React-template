@@ -5,10 +5,28 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import en from "./locales/en.json";
 import ptBr from "./locales/pt-br.json";
 
+// Configurações adicionais do LanguageDetector
+const options = {
+  order: [
+    "querystring",
+    "cookie",
+    "localStorage",
+    "navigator",
+    "htmlTag",
+    "path",
+    "subdomain",
+  ],
+  lookupQuerystring: "lng",
+  lookupCookie: "i18next",
+  lookupLocalStorage: "i18nextLng",
+  caches: ["localStorage", "cookie"],
+};
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    detection: options,
     resources: {
       en: {
         translation: en,
@@ -17,10 +35,11 @@ i18n
         translation: ptBr,
       },
     },
-    fallbackLng: "en",
+    fallbackLng: "en", // Define o idioma padrão aqui
     interpolation: {
       escapeValue: false,
     },
   });
 
+i18n.changeLanguage("en");
 export default i18n;

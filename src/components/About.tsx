@@ -1,13 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Clock, Facebook, Instagram, Twitter } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
-  const hours = [
-    { day: "Monday - Friday", time: "11:00 AM - 10:00 PM" },
-    { day: "Saturday", time: "12:00 PM - 11:00 PM" },
-    { day: "Sunday", time: "12:00 PM - 9:00 PM" },
-  ];
+  const { t } = useTranslation();
+  const hours = t("aboutCard1Text", { returnObjects: true }) as {
+    day: string;
+    time: string;
+  }[];
 
   const socialLinks = [
     { icon: Facebook, href: "#", label: "Facebook" },
@@ -25,10 +26,11 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            {t("aboutTitle")}
+          </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Serving authentic Chinese cuisine since 1985, Red Dragon brings the
-            flavors of China to New York City.
+            {t("aboutText")}
           </p>
         </motion.div>
 
@@ -45,7 +47,7 @@ const About = () => {
               <Clock className="w-8 h-8 text-red-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
-              Opening Hours
+              {t("aboutCard1Title")}
             </h3>
             <div className="space-y-2">
               {hours.map(({ day, time }) => (
@@ -66,7 +68,7 @@ const About = () => {
             className="bg-white p-6 rounded-lg shadow-lg"
           >
             <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">
-              Connect With Us
+              {t("aboutCard2Title")}
             </h3>
             <div className="flex justify-center space-x-6">
               {socialLinks.map(({ icon: Icon, href, label }) => (
@@ -91,7 +93,7 @@ const About = () => {
             className="col-span-2 bg-white p-6 rounded-lg shadow-lg min-h-[450px]"
           >
             <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">
-              Location
+              {t("aboutCard3Title")}
             </h3>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46902.47771744541!2d-80.19423692149226!3d25.928772705201457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9adb76345cf11%3A0xcfa42bdfe177ce36!2sHouse%20Of%20Chang%20Take%20Out!5e0!3m2!1spt-BR!2sbr!4v1739137112954!5m2!1spt-BR!2sbr"

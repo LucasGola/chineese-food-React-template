@@ -1,47 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import MenuMock from "../assets/mocks/Menu.json";
+import { useTranslation } from "react-i18next";
 
 const Menu = () => {
-  const menuItems = [
-    {
-      category: "Appetizers",
-      items: [
-        {
-          name: "Spring Rolls",
-          description: "Crispy rolls filled with vegetables and mushrooms",
-          price: "$6.99",
-          image:
-            "https://images.unsplash.com/photo-1606525437679-037aca74a3e9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-          name: "Dim Sum Platter",
-          description: "Assorted steamed dumplings",
-          price: "$12.99",
-          image:
-            "https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-        },
-      ],
-    },
-    {
-      category: "Main Courses",
-      items: [
-        {
-          name: "Kung Pao Chicken",
-          description: "Spicy diced chicken with peanuts and vegetables",
-          price: "$15.99",
-          image:
-            "https://images.unsplash.com/photo-1525755662778-989d0524087e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-        },
-        {
-          name: "Mapo Tofu",
-          description: "Soft tofu in spicy sauce with minced pork",
-          price: "$14.99",
-          image:
-            "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-        },
-      ],
-    },
-  ];
+  const { t } = useTranslation();
+  const menuItems = Object.entries(MenuMock).map(([category, items]) => ({
+    category,
+    items,
+  }));
 
   return (
     <section id="menu" className="py-20 bg-white">
@@ -53,10 +20,10 @@ const Menu = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Menu</h2>
-          <p className="text-lg text-gray-600">
-            Discover our authentic Chinese dishes
-          </p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            {t("menuTitle")}
+          </h2>
+          <p className="text-lg text-gray-600">{t("menuText")}</p>
         </motion.div>
 
         <div className="space-y-12">

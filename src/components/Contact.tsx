@@ -2,8 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const {
     register,
     handleSubmit,
@@ -25,8 +27,10 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
-          <p className="text-lg text-gray-600">Get in touch with us</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            {t("contactTitle")}
+          </h2>
+          <p className="text-lg text-gray-600">{t("contactText")}</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -41,24 +45,28 @@ const Contact = () => {
             <div className="flex items-center space-x-4">
               <Phone className="w-6 h-6 text-red-600" />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {t("phone")}
+                </h3>
                 <p className="text-gray-600">(555) 123-4567</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <Mail className="w-6 h-6 text-red-600" />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">Email</h3>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {t("email")}
+                </h3>
                 <p className="text-gray-600">info@Reddragon.com</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <MapPin className="w-6 h-6 text-red-600" />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">Address</h3>
-                <p className="text-gray-600">
-                  123 Dragon Street, Chinatown, NY 10013
-                </p>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {t("address")}
+                </h3>
+                <p className="text-gray-600">{t("location")}</p>
               </div>
             </div>
           </motion.div>
@@ -76,7 +84,7 @@ const Contact = () => {
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Name
+                  {t("name")}
                 </label>
                 <input
                   type="text"
@@ -85,7 +93,7 @@ const Contact = () => {
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500"
                 />
                 {errors.name && (
-                  <span className="text-red-600 text-sm">Name is required</span>
+                  <span className="text-red-600 text-sm">{t("nameError")}</span>
                 )}
               </div>
               <div>
@@ -93,7 +101,7 @@ const Contact = () => {
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Email
+                  {t("email")}
                 </label>
                 <input
                   type="email"
@@ -106,7 +114,7 @@ const Contact = () => {
                 />
                 {errors.email && (
                   <span className="text-red-600 text-sm">
-                    Valid email is required
+                    {t("emailError")}
                   </span>
                 )}
               </div>
@@ -115,7 +123,7 @@ const Contact = () => {
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Message
+                  {t("message")}
                 </label>
                 <textarea
                   id="message"
@@ -125,7 +133,7 @@ const Contact = () => {
                 />
                 {errors.message && (
                   <span className="text-red-600 text-sm">
-                    Message is required
+                    {t("messageError")}
                   </span>
                 )}
               </div>
@@ -135,7 +143,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition-colors"
               >
-                Send Message
+                {t("sendButton")}
               </motion.button>
             </form>
           </motion.div>
