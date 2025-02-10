@@ -5,7 +5,6 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import en from "./locales/en.json";
 import ptBr from "./locales/pt-br.json";
 
-// Configurações adicionais do LanguageDetector
 const options = {
   order: [
     "querystring",
@@ -35,7 +34,7 @@ i18n
         translation: ptBr,
       },
     },
-    fallbackLng: "en", // Define o idioma padrão aqui
+    fallbackLng: "en",
     interpolation: {
       escapeValue: false,
     },
