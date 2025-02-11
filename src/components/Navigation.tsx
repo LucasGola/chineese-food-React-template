@@ -2,12 +2,14 @@ import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import redDragonLogo from '../assets/images/red-dragon-logo.webp';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = React.useState(false);
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const menuItems = [
     { key: 'home', label: t('home') },
@@ -17,10 +19,30 @@ const Navigation = () => {
     { key: 'contact', label: t('contact') },
   ];
 
-  const languages = [
+  const languages: { code: string; name: string; flag: string }[] = [
     { code: 'en', name: 'English', flag: 'https://flagcdn.com/w20/us.png' },
-    { code: 'pt', name: 'Português', flag: 'https://flagcdn.com/w20/br.png' },
+    {
+      code: 'pt-br',
+      name: 'Português',
+      flag: 'https://flagcdn.com/w20/br.png',
+    },
     { code: 'es', name: 'Espanhol', flag: 'https://flagcdn.com/w20/es.png' },
+    { code: 'ar', name: 'عربى', flag: 'https://flagcdn.com/w20/sa.png' },
+    { code: 'bn', name: 'বাংলা', flag: 'https://flagcdn.com/w20/bd.png' },
+    { code: 'de', name: 'Deutsch', flag: 'https://flagcdn.com/w20/de.png' },
+    { code: 'fr', name: 'Français', flag: 'https://flagcdn.com/w20/fr.png' },
+    { code: 'he', name: 'עברית', flag: 'https://flagcdn.com/w20/il.png' },
+    { code: 'hi', name: 'हिंदी', flag: 'https://flagcdn.com/w20/in.png' },
+    {
+      code: 'id',
+      name: 'Bahasa Indonesia',
+      flag: 'https://flagcdn.com/w20/id.png',
+    },
+    { code: 'ja', name: '日本語', flag: 'https://flagcdn.com/w20/jp.png' },
+    { code: 'ko', name: '한국어', flag: 'https://flagcdn.com/w20/kr.png' },
+    { code: 'ru', name: 'Русский', flag: 'https://flagcdn.com/w20/ru.png' },
+    { code: 'ur', name: 'اردو', flag: 'https://flagcdn.com/w20/pk.png' },
+    { code: 'zh', name: '中文', flag: 'https://flagcdn.com/w20/cn.png' },
   ];
 
   const currentLanguage =
@@ -38,7 +60,10 @@ const Navigation = () => {
   };
 
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
+    if (lng !== i18n.language) {
+      i18n.changeLanguage(lng);
+      navigate(`/${lng}`);
+    }
   };
 
   return (

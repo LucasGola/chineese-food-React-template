@@ -2,10 +2,6 @@ import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
-import en from './locales/en.json';
-import es from './locales/es.json';
-import ptBr from './locales/pt-br.json';
-
 const options = {
   order: [
     'querystring',
@@ -22,27 +18,39 @@ const options = {
   caches: ['localStorage', 'cookie'],
 };
 
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    detection: options,
-    resources: {
-      en: {
-        translation: en,
-      },
-      pt: {
-        translation: ptBr,
-      },
-      es: {
-        translation: es,
-      },
-    },
-    fallbackLng: 'en',
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+const importAll = async () => {
+  const modules = import.meta.glob('./locales/*.json');
+  const resources: { [key: string]: { translation: Record<string, string> } } = {};
 
-i18n.changeLanguage('en');
+  for (const path in modules) {
+    const module = await modules[path]();
+    const lang = (module as { language: string }).language;
+    resources[lang] = {
+      translation: (module as { default: Record<string, string> }).default,
+    };
+  }
+
+  return resources;
+};
+
+const initializeI18n = async () => {
+  const resources = await importAll();
+
+  i18n
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+      detection: options,
+      resources: resources,
+      fallbackLng: 'en',
+      interpolation: {
+        escapeValue: false,
+      },
+    });
+
+  i18n.changeLanguage('en');
+};
+
+initializeI18n();
+
 export default i18n;
