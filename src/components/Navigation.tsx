@@ -20,6 +20,7 @@ const Navigation = () => {
   const languages = [
     { code: 'en', name: 'English', flag: 'https://flagcdn.com/w20/us.png' },
     { code: 'pt', name: 'Português', flag: 'https://flagcdn.com/w20/br.png' },
+    { code: 'es', name: 'Espanhol', flag: 'https://flagcdn.com/w20/es.png' },
   ];
 
   const currentLanguage =
