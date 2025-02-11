@@ -1,10 +1,9 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
-import uberLogo from "../assets/images/uber-eats.svg";
-import doordashLogo from "../assets/images/DoorDash_Logo.svg.png";
-import grubhubLogo from "../assets/images//grubhub-logo-4.png";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import grubhubLogo from "../assets/images//grubhub-logo-4.png";
+import doordashLogo from "../assets/images/DoorDash_Logo.svg.png";
+import uberLogo from "../assets/images/uber-eats.svg";
 
 const Delivery = () => {
   const { t } = useTranslation();
@@ -73,6 +72,19 @@ const Delivery = () => {
             </motion.a>
           ))}
         </div>
+        <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-red-600 text-white px-8 py-3 rounded-full flex items-center space-x-2 hover:bg-red-700 transition-colors my-8"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 3 * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <span>{t("order")}</span>
+              <ArrowRight className="w-5 h-5" />
+            </motion.button>
       </div>
     </section>
   );
