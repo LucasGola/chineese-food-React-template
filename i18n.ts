@@ -1,6 +1,7 @@
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
+import ptBr from './locales/pt-br.json';
 
 const options = {
   order: [
@@ -20,7 +21,8 @@ const options = {
 
 const importAll = async () => {
   const modules = import.meta.glob('./locales/*.json');
-  const resources: { [key: string]: { translation: Record<string, string> } } = {};
+  const resources: { [key: string]: { translation: Record<string, string> } } =
+    {};
 
   for (const path in modules) {
     const module = await modules[path]();
@@ -41,7 +43,12 @@ const initializeI18n = async () => {
     .use(initReactI18next)
     .init({
       detection: options,
-      resources: resources,
+      resources: {
+        ...resources,
+        pt: {
+          translation: ptBr,
+        },
+      },
       fallbackLng: 'en',
       interpolation: {
         escapeValue: false,
