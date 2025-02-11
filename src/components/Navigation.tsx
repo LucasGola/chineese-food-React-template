@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import redDragonLogo from '../assets/images/red-dragon-logo.webp';
+import redDragonLogo from '../assets/images/red-dragon-logo2.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -130,7 +130,7 @@ const Navigation = () => {
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
-                    className='absolute bg-white shadow-md rounded-md mt-2 z-10'
+                    className='absolute bg-white shadow-md rounded-md mt-2 z-10 max-h-80 overflow-y-auto'
                   >
                     {languages.map((lang, index) => (
                       <motion.button
@@ -188,7 +188,57 @@ const Navigation = () => {
               </button>
             ))}
             {/* Mobile Language Selector */}
-            <div className='flex flex-col items-stretch space-y-2 px-3 py-2'>
+            <motion.div>
+              <motion.button
+                key={'language'}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+                className='text-gray-800 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium flex items-center space-x-2'
+                style={{
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                }}
+              >
+                <img
+                  src={currentLanguage.flag}
+                  alt={currentLanguage.name}
+                  className='w-6 h-5'
+                />
+                <span>{currentLanguage.name}</span>
+              </motion.button>
+              {isLangMenuOpen && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className='absolute bg-white shadow-md rounded-md mt-2 z-10 max-h-40 overflow-y-auto'
+                >
+                  {languages.map((lang, index) => (
+                    <motion.button
+                      key={lang.code}
+                      onClick={() => {
+                        changeLanguage(lang.code);
+                        setIsLangMenuOpen(false);
+                      }}
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1, duration: 0.3 }}
+                      className='flex items-center space-x-2 px-4 py-2 text-sm text-gray-800 hover:bg-gray-100 w-full'
+                    >
+                      <img
+                        src={lang.flag}
+                        alt={lang.name}
+                        className='w-6 h-5'
+                      />
+                      <span>{lang.name}</span>
+                    </motion.button>
+                  ))}
+                </motion.div>
+              )}
+            </motion.div>
+            {/* <div className='flex flex-col items-stretch space-y-2 px-3 py-2'>
               {languages.map((lang) => (
                 <button
                   key={lang.code}
@@ -199,7 +249,7 @@ const Navigation = () => {
                   <span>{lang.name}</span>
                 </button>
               ))}
-            </div>
+            </div> */}
           </div>
         </motion.div>
       )}
