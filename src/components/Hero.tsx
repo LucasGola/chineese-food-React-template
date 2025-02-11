@@ -10,13 +10,12 @@ const Hero = () => {
       id='home'
       className='min-h-screen flex items-center justify-center bg-gradient-to-b from-red-50 to-white pt-16'
     >
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 justify-center'>
-        <div className='grid grid-cols-1 gap-8 items-center justify-center'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+        <div className='grid grid-cols-1 gap-8 items-center'>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className='justify-center'
           >
             <h1 className='flex flex-col md:flex-row text-5xl md:text-6xl font-bold text-gray-900 mb-4 items-center justify-center space-y-2 md:space-y-0 md:space-x-2'>
               <span>Red Dragon</span>
