@@ -39,6 +39,7 @@ const App = () => {
         <div className='min-h-screen bg-white'>
           <Routes>
             <Route path='/:language' element={<MyApp />} />
+            <Route path='/:language/menu' element={<MyApp />} />
             <Route path='/' element={<Navigate replace to='/en' />} />
           </Routes>
         </div>
