@@ -1,30 +1,1166 @@
 {
   "Appetizers": [
     {
-      "name": "Spring Rolls",
-      "description": "Crispy rolls filled with vegetables and mushrooms",
-      "price": "$6.99",
-      "image": "https://images.unsplash.com/photo-1606525437679-037aca74a3e9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "name": "Spring Roll (2) 上海卷",
+      "description": "Crispy fried rolls filled with fresh vegetables.",
+      "price": "$3.75",
+      "image": "https://images.unsplash.com/photo-1606525437679-037aca74a3e9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFNwcmluZyUyMFJvbGx8ZW58MHx8MHx8fDA%3D"
     },
     {
-      "name": "Dim Sum Platter",
-      "description": "Assorted steamed dumplings",
-      "price": "$12.99",
-      "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      "name": "Egg Roll (each) 春卷",
+      "description": "Golden-fried roll stuffed with cabbage, carrots, and pork.",
+      "price": "$1.95",
+      "image": "https://carlsbadcravings.com/wp-content/uploads/2019/12/egg-rolls-4cv.jpg"
+    },
+    {
+      "name": "Shrimp Egg Roll (each) 虾卷",
+      "description": "Crispy egg roll filled with shrimp and vegetables.",
+      "price": "$2.30",
+      "image": "https://www.skinnytaste.com/wp-content/uploads/2021/06/Air-Fryer-Shrimp-Egg-Rolls-11.jpg"
+    },
+    {
+      "name": "Fried Wonton (12) 炸云吞",
+      "description": "Crispy fried wontons filled with seasoned pork.",
+      "price": "$7.95",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0we7aksoAOrU6H-DiuUhOHJxKmtBPaCjOw&s"
+    },
+    {
+      "name": "Fried Dumpling (8) 锅贴",
+      "description": "Pan-fried dumplings stuffed with pork and vegetables.",
+      "price": "$9.25",
+      "image": "https://khinskitchen.com/wp-content/uploads/2020/07/fried-gyoza-min.jpg"
+    },
+    {
+      "name": "Steamed Dumpling (8) 水饺",
+      "description": "Soft steamed dumplings filled with pork and vegetables.",
+      "price": "$9.25",
+      "image": "https://www.gourmetfoodstore.com/images/product/icon/steamed-chicken-dumplings-recipe-112773-1s-12773.jpg"
+    },
+    {
+      "name": "Pan Fried Wonton (10) 煎混沌",
+      "description": "Wontons pan-fried to a crispy golden brown.",
+      "price": "$8.25",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtbjsEUGH_Yxu0-iO69V6UpsKb58WifbQR1Q&s"
+    },
+    {
+      "name": "Bar-B-Q Spare Ribs 排骨",
+      "description": "Juicy pork ribs glazed with a sweet and savory BBQ sauce.",
+      "price": "$9.95",
+      "image": "https://www.allrecipes.com/thmb/IWVelWahUb2gQxixWJC2N-HXp0k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/22469-Barbecue-Ribs-ddmfs-2x1-210-e799db142f594b00bb317bb357d0971c.jpg"
+    },
+    {
+      "name": "Sliced Roast Pork 叉烧片",
+      "description": "Tender roasted pork slices with a rich, flavorful glaze.",
+      "price": "$8.95",
+      "image": "https://playswellwithbutter.com/wp-content/uploads/2022/03/Char-Siu-Roasted-Chinese-BBQ-Pork-19.jpg"
+    },
+    {
+      "name": "Beef Teriyaki on Stick (4) 牛肉串",
+      "description": "Grilled beef skewers marinated in teriyaki sauce.",
+      "price": "$8.95",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTakoPIYAkpWC9pf4EdSjvjh66BuVFNg--0Xw&s"
+    },
+    {
+      "name": "Chicken Teriyaki on Stick (4) 鸡肉串",
+      "description": "Tender chicken skewers grilled with teriyaki sauce.",
+      "price": "$8.95",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu1RpVtE5g0Wu0C8mE78OCPzCAjmAjO6OQxA&s"
+    },
+    {
+      "name": "Pu Pu Platter 宝宝盘",
+      "description": "A combination of assorted appetizers, perfect for sharing.",
+      "price": "$15.95",
+      "image": "https://s3-media0.fl.yelpcdn.com/bphoto/uxjOBNEgH0wqpybGlE8O6A/1000s.jpg"
+    },
+    {
+      "name": "Boneless Spare Ribs 无骨排",
+      "description": "Savory boneless pork ribs with a caramelized glaze.",
+      "price": "$8.95",
+      "image": "https://grumpyrecipes.com/wp-content/uploads/2024/10/chinese-boneless-spare-ribs-feature.jpg"
+    },
+    {
+      "name": "Cold Sesame Noodles 芝麻凉面",
+      "description": "Chilled noodles tossed in a rich sesame sauce.",
+      "price": "$7.95",
+      "image": "https://www.seriouseats.com/thmb/fIDd5_FOdYrc7i4eHLlBIOwhodk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20220720-Seasame-Noodles--Amanda-Suarez-Hero-53162bd767484e0aac39b833bc67be1a.JPG"
+    },
+    {
+      "name": "Krab Rangoon (8) 炸角",
+      "description": "Crispy wontons stuffed with creamy crab and cheese filling.",
+      "price": "$7.95",
+      "image": "https://twoplaidaprons.com/wp-content/uploads/2023/03/crab-wontons-thumbnail.jpg"
+    },
+    {
+      "name": "French Fries 薯条",
+      "description": "Crispy golden fries, lightly salted.",
+      "price": "$5.95",
+      "image": "https://i.ytimg.com/vi/G-A2bRnPJEY/maxresdefault.jpg"
+    },
+    {
+      "name": "Edamame 毛豆",
+      "description": "Steamed soybeans lightly salted for a healthy snack.",
+      "price": "$6.50",
+      "image": "https://www.allrecipes.com/thmb/5qAAk5mwB09d_iHtiSzawuKqJaY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/4487118-d22d07fb6859496693239a4f1a3d9f99.jpg"
+    },
+    {
+      "name": "Fried Chicken Wings 炸鸡翅",
+      "description": "Crispy fried wings available in regular, honey garlic, buffalo, BBQ, or spicy garlic (+$1).",
+      "price": "$9.75",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6DHmRfmtvcAdM8U7Qu6E9ryPUPJvOQehlMw&s"
+    },
+    {
+      "name": "Chinese Donuts (10) 炸包",
+      "description": "Fluffy, lightly sweetened fried dough bites.",
+      "price": "$7.50",
+      "image": "https://omnivorescookbook.com/wp-content/uploads/2020/02/2001_You-TIao-Chinese-Donut_003.jpg"
     }
   ],
-  "Main Courses": [
+
+  "Soup": [
     {
-      "name": "Kung Pao Chicken",
-      "description": "Spicy diced chicken with peanuts and vegetables",
-      "price": "$15.99",
-      "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      "name": "Wonton Soup 云吞汤",
+      "description": "Delicious wonton soup with savory broth and pork dumplings.",
+      "price": "$2.75",
+      "image": "https://www.skinnytaste.com/wp-content/uploads/2020/01/Wonton-Soup-7.jpg"
     },
     {
-      "name": "Mapo Tofu",
-      "description": "Soft tofu in spicy sauce with minced pork",
-      "price": "$14.99",
-      "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      "name": "Egg Drop Soup 蛋花汤",
+      "description": "Classic Chinese soup with silken egg swirls.",
+      "price": "$2.75",
+      "image": "https://onehappybite.com/wp-content/uploads/2024/10/DSC03085-2.jpg"
+    },
+    {
+      "name": "Mix Wonton Egg Drop Soup 混合汤",
+      "description": "Combination of wonton and egg drop soup for a delightful experience.",
+      "price": "$3.25",
+      "image": "https://thissillygirlskitchen.com/wp-content/uploads/2024/08/wonton-egg-drop-soup-15.jpg"
+    },
+    {
+      "name": "Chicken Corn Soup 鸡茸玉米汤",
+      "description": "Smooth and rich soup with chicken and corn.",
+      "price": "$4.25",
+      "image": "https://theflavoursofkitchen.com/wp-content/uploads/2018/09/Sweetcorn-Chicken-Soup-2.jpg"
+    },
+    {
+      "name": "Chicken Rice Soup 鸡肉饭汤",
+      "description": "Comforting soup with chicken, rice, and vegetables.",
+      "price": "$3.25",
+      "image": "https://www.recipetineats.com/tachyon/2020/10/Chinese-Rice-Soup_0-SQ.jpg"
+    },
+    {
+      "name": "Chicken Noodle Soup 鸡肉面汤",
+      "description": "Hearty soup with chicken and noodles.",
+      "price": "$3.25",
+      "image": "https://omnivorescookbook.com/wp-content/uploads/2021/03/210203_Chinese-Chicken-Noodle-Soup_550.jpg"
+    },
+    {
+      "name": "Vegetable Soup (for 2) 菜汤",
+      "description": "Nutritious vegetable soup for two.",
+      "price": "$5.75",
+      "image": "https://www.thissavoryvegan.com/wp-content/uploads/2017/01/asian-vegetable-noodle-soup-3.jpg"
+    },
+    {
+      "name": "Hot & Sour Soup 酸辣汤",
+      "description": "Spicy and tangy soup with tofu and vegetables.",
+      "price": "$3.75",
+      "image": "https://www.chilitochoc.com/wp-content/uploads/2021/01/chinese-hot-and-sour-soup-sq.jpg"
+    },
+    {
+      "name": "Roast Pork Yat Gaw Mein 叉烧压杆面",
+      "description": "Savory soup with roast pork and noodles.",
+      "price": "$8.95",
+      "image": "https://ingoodflavor.com/wp-content/uploads/2021/08/IMG_3759.jpg"
+    },
+    {
+      "name": "House Special Soup 本楼汤",
+      "description": "Chef's special soup with mixed ingredients.",
+      "price": "$9.50",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/37/37/2b/house-special-soup-for.jpg"
+    }
+  ],
+
+  "Chow Mein or Chop Suey": [
+    {
+      "name": "Chicken Chow Mein 鸡肉炒面",
+      "description": "Flavorful chow mein with tender chicken and stir-fried vegetables.",
+      "price": "$6.95",
+      "image": ""
+    },
+    {
+      "name": "Roast Pork Chow Mein 叉烧炒面",
+      "description": "Savory chow mein with roast pork and vegetables.",
+      "price": "$6.95",
+      "image": ""
+    },
+    {
+      "name": "Beef Chow Mein 牛肉炒面",
+      "description": "Delicious chow mein with succulent beef and stir-fried vegetables.",
+      "price": "$7.25",
+      "image": ""
+    },
+    {
+      "name": "Shrimp Chow Mein 虾炒面",
+      "description": "Savory chow mein with succulent shrimp and stir-fried vegetables.",
+      "price": "$7.25",
+      "image": ""
+    },
+    {
+      "name": "Vegetable Chow Mein 菜炒面",
+      "description": "Nutritious chow mein with a mix of fresh vegetables.",
+      "price": "$6.95",
+      "image": ""
+    },
+    {
+      "name": "House Special Chow Mein 本楼炒面",
+      "description": "Chef's special chow mein with a mix of meats and vegetables.",
+      "price": "$7.50",
+      "image": ""
+    }
+  ],
+
+  "Lo Mein": [
+    {
+      "name": "Roast Pork Lo Mein 叉烧捞面",
+      "description": "Delicious lo mein noodles with savory roast pork.",
+      "price": "$6.95",
+      "image": ""
+    },
+    {
+      "name": "Chicken Lo Mein 鸡肉捞面",
+      "description": "Tasty lo mein noodles with tender chicken pieces.",
+      "price": "$6.95",
+      "image": ""
+    },
+    {
+      "name": "Beef Lo Mein 牛肉捞面",
+      "description": "Flavorful lo mein noodles with succulent beef slices.",
+      "price": "$7.25",
+      "image": ""
+    },
+    {
+      "name": "Shrimp Lo Mein 虾捞面",
+      "description": "Satisfying lo mein noodles with juicy shrimp.",
+      "price": "$7.25",
+      "image": ""
+    },
+    {
+      "name": "Vegetable Lo Mein 菜捞面",
+      "description": "Nutritious lo mein noodles with fresh vegetables.",
+      "price": "$6.95",
+      "image": ""
+    },
+    {
+      "name": "House Special Lo Mein 本楼捞面",
+      "description": "Special lo mein noodles with a mix of meats and vegetables.",
+      "price": "$7.50",
+      "image": ""
+    }
+  ],
+
+  "Egg Foo Young": [
+    {
+      "name": "Roast Pork Egg Foo Young 叉烧蓉蛋",
+      "description": "Savory egg foo young with tender roast pork.",
+      "price": "$10.95",
+      "image": ""
+    },
+    {
+      "name": "Chicken Egg Foo Young 鸡肉蓉蛋",
+      "description": "Delicious egg foo young with flavorful chicken.",
+      "price": "$10.95",
+      "image": ""
+    },
+    {
+      "name": "Beef Egg Foo Young 牛肉蓉蛋",
+      "description": "Hearty egg foo young with succulent beef.",
+      "price": "$11.95",
+      "image": ""
+    },
+    {
+      "name": "Shrimp Egg Foo Young 虾蓉蛋",
+      "description": "Tasty egg foo young with juicy shrimp.",
+      "price": "$11.95",
+      "image": ""
+    },
+    {
+      "name": "Vegetable Egg Foo Young 菜蓉蛋",
+      "description": "Nutritious egg foo young with fresh vegetables.",
+      "price": "$10.95",
+      "image": ""
+    },
+    {
+      "name": "House Special Egg Foo Young 本楼蓉蛋",
+      "description": "Special egg foo young with a mix of meats and vegetables.",
+      "price": "$12.95",
+      "image": ""
+    }
+  ],
+
+  "Vegetables": [
+    {
+      "name": "Mixed Vegetables 素什锦",
+      "description": "A mix of fresh vegetables served with white rice; brown rice available for an additional $1.5.",
+      "price": "$6.50",
+      "image": ""
+    },
+    {
+      "name": "Broccoli w. Garlic Sauce 鱼香芥兰",
+      "description": "Tender broccoli cooked with savory garlic sauce, served with white rice; brown rice available for an additional $1.5.",
+      "price": "$6.50",
+      "image": ""
+    },
+    {
+      "name": "Eggplant w. Garlic Sauce 鱼香茄子",
+      "description": "Flavorful eggplant cooked with garlic sauce, served with white rice; brown rice available for an additional $1.5.",
+      "price": "$6.50",
+      "image": ""
+    },
+    {
+      "name": "Ma Po Tofu 麻婆豆腐",
+      "description": "Spicy and savory tofu dish, served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.95",
+      "image": ""
+    },
+    {
+      "name": "Moo Shu Veg 木须菜",
+      "description": "Vegetable stir-fry served with pancakes; no rice included.",
+      "price": "$11.95",
+      "image": ""
+    },
+    {
+      "name": "Bean Curd Hunan Style (Fried) 湖南豆腐",
+      "description": "Fried bean curd cooked in Hunan style, served with white rice; brown rice available for an additional $1.5.",
+      "price": "$11.95",
+      "image": ""
+    }
+  ],
+
+  "Fried Rice": [
+    {
+      "name": "Roast Pork Fried Rice 叉烧炒饭",
+      "description": "Flavorful fried rice with savory roast pork.",
+      "price": "$6.25",
+      "image": ""
+    },
+    {
+      "name": "Chicken Fried Rice 鸡肉炒饭",
+      "description": "Tasty fried rice with tender chicken pieces.",
+      "price": "$6.25",
+      "image": ""
+    },
+    {
+      "name": "Beef Fried Rice 牛肉炒饭",
+      "description": "Delicious fried rice with succulent beef slices.",
+      "price": "$6.95",
+      "image": ""
+    },
+    {
+      "name": "Shrimp Fried Rice 虾炒饭",
+      "description": "Satisfying fried rice with juicy shrimp.",
+      "price": "$6.95",
+      "image": ""
+    },
+    {
+      "name": "Vegetable Fried Rice 菜炒饭",
+      "description": "Nutritious fried rice with a mix of fresh vegetables.",
+      "price": "$6.25",
+      "image": ""
+    },
+    {
+      "name": "House Special Fried Rice 本楼炒饭",
+      "description": "Special fried rice with a mix of meats and vegetables.",
+      "price": "$7.25",
+      "image": ""
+    }
+  ],
+
+  "Pork": [
+    {
+      "name": "Roast Pork w. Mix Vegetable 叉烧杂菜",
+      "description": "Savory roast pork with mixed vegetables served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Roast Pork w. Broccoli 叉烧芥兰",
+      "description": "Tender roast pork with broccoli served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Sweet Sour Pork 甜酸肉",
+      "description": "Delicious sweet and sour pork served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Roast Pork w. Black Bean Sauce 豆什叉烧",
+      "description": "Flavorful roast pork with black bean sauce served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Roast Pork w. Snow Peas 雪豆叉烧",
+      "description": "Savory roast pork with snow peas served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Shredded Pork w. Scallions 葱爆肉",
+      "description": "Delicious shredded pork with scallions served with white rice; brown rice available for an additional $1.5.",
+      "price": "$13.25",
+      "image": ""
+    },
+    {
+      "name": "Shredded Pork w. Garlic Sauce 鱼香肉",
+      "description": "Flavorful shredded pork with garlic sauce served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Shredded Pork w. Szechuan Style 四川肉",
+      "description": "Spicy and savory shredded pork in Szechuan style served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Roast Pork Hunan Style 湖南叉烧",
+      "description": "Delicious roast pork in Hunan style served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Moo Shu Pork 木须肉",
+      "description": "Savory moo shu pork served with pancakes; no rice included.",
+      "price": "$13.25",
+      "image": ""
+    }
+  ],
+
+  "Beef": [
+    {
+      "name": "Pepper Steak w. Onion 青椒牛",
+      "description": "Savory pepper steak with onion served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Beef w. Broccoli 芥兰牛",
+      "description": "Tender beef with broccoli served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Beef w. Mix Vegetable 杂菜牛",
+      "description": "Flavorful beef with mixed vegetables served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Curry Beef w. Onion 咖喱牛",
+      "description": "Delicious curry beef with onion served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Beef w. Scallions 葱爆牛",
+      "description": "Savory beef with scallions served with white rice; brown rice available for an additional $1.5.",
+      "price": "$14.25",
+      "image": ""
+    },
+    {
+      "name": "Beef w. Snow Peas 雪豆牛",
+      "description": "Tender beef with snow peas served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Beef w. Garlic Sauce 鱼香牛",
+      "description": "Flavorful beef with garlic sauce served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Beef Szechuan Style 四川牛",
+      "description": "Spicy and savory beef in Szechuan style served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Hunan Beef 湖南牛",
+      "description": "Delicious beef in Hunan style served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Moo Shu Beef 木须牛",
+      "description": "Savory moo shu beef served with pancakes; no rice included.",
+      "price": "$14.50",
+      "image": ""
+    },
+    {
+      "name": "Beef Chow Fun (No Rice) 牛河粉",
+      "description": "Delicious beef chow fun with flat noodles; no rice included.",
+      "price": "$14.50",
+      "image": ""
+    }
+  ],
+
+  "Seafood": [
+    {
+      "name": "Shrimp w. Broccoli 芥兰虾",
+      "description": "Tender shrimp with broccoli served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Shrimp w. Mix Vegetable 杂菜虾",
+      "description": "Flavorful shrimp with mixed vegetables served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Shrimp w. Lobster Sauce (Egg Sauce) 虾龙糊",
+      "description": "Delicious shrimp with lobster sauce (egg sauce) served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Shrimp w. Snow Peas 雪豆虾",
+      "description": "Savory shrimp with snow peas served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Curry Shrimp w. Onion 咖喱虾",
+      "description": "Delicious curry shrimp with onion served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Shrimp w. Black Bean Sauce 豆什虾",
+      "description": "Flavorful shrimp with black bean sauce served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Shrimp w. Cashew Nuts 腰果虾",
+      "description": "Tender shrimp with cashew nuts served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Shrimp w. Almonds 杏仁虾",
+      "description": "Delicious shrimp with almonds served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Sweet Sour Shrimp 甜酸虾",
+      "description": "Savory sweet and sour shrimp served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Moo Shu Shrimp 木须虾",
+      "description": "Tasty moo shu shrimp served with pancakes; no rice included.",
+      "price": "$14.25",
+      "image": ""
+    },
+    {
+      "name": "Shrimp w. Garlic Sauce 鱼香虾",
+      "description": "Flavorful shrimp with garlic sauce served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Hot & Spicy Shrimp 干烧虾",
+      "description": "Spicy and savory shrimp served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Kung Pao Shrimp 宫保虾",
+      "description": "Delicious Kung Pao shrimp served with white rice; brown rice available for an additional $1.5.",
+      "price": "$9.50",
+      "image": ""
+    },
+    {
+      "name": "Butterfly Shrimp (w. Bacon) 蝴蝶虾",
+      "description": "Savory butterfly shrimp with bacon served with white rice; brown rice available for an additional $1.5.",
+      "price": "$15.25",
+      "image": ""
+    },
+    {
+      "name": "Scallops Szechaun Style 四川干贝",
+      "description": "Spicy and flavorful scallops in Szechuan style served with white rice; brown rice available for an additional $1.5.",
+      "price": "$15.25",
+      "image": ""
+    },
+    {
+      "name": "Scallops w. Garlic Sauce 鱼香干贝",
+      "description": "Tender scallops with garlic sauce served with white rice; brown rice available for an additional $1.5.",
+      "price": "$15.25",
+      "image": ""
+    },
+    {
+      "name": "Shrimp w. Eggplant 茄子虾",
+      "description": "Delicious shrimp with eggplant served with white rice; brown rice available for an additional $1.5.",
+      "price": "$14.25",
+      "image": ""
+    },
+    {
+      "name": "Hunan Shrimp 湖南虾",
+      "description": "Savory shrimp in Hunan style served with white rice; brown rice available for an additional $1.5.",
+      "price": "$14.25",
+      "image": ""
+    },
+    {
+      "name": "Shrimp Szechuan Style 四川虾",
+      "description": "Spicy and savory shrimp in Szechuan style served with white rice; brown rice available for an additional $1.5.",
+      "price": "$14.25",
+      "image": ""
+    }
+  ],
+
+  "House Specialties": [
+    {
+      "name": "Orange Chicken 陈皮鸡",
+      "description": "Delicious orange chicken served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.95",
+      "image": ""
+    },
+    {
+      "name": "General Tso's Chicken 左宗鸡",
+      "description": "Savory General Tso's chicken served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.95",
+      "image": ""
+    },
+    {
+      "name": "Sesame Chicken 芝麻鸡",
+      "description": "Flavorful sesame chicken served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.95",
+      "image": ""
+    },
+    {
+      "name": "Four Seasons 炒四季",
+      "description": "A delightful mix of meats and vegetables representing all four seasons, served with white rice; brown rice available for an additional $1.5.",
+      "price": "$14.95",
+      "image": ""
+    },
+    {
+      "name": "Scallop and Shrimp In Garlic Sauce 鱼香干贝虾",
+      "description": "Savory scallops and shrimp in garlic sauce served with white rice; brown rice available for an additional $1.5.",
+      "price": "$15.95",
+      "image": ""
+    },
+    {
+      "name": "Scallop & Beef 干贝牛",
+      "description": "Flavorful scallops and beef served with white rice; brown rice available for an additional $1.5.",
+      "price": "$15.95",
+      "image": ""
+    },
+    {
+      "name": "Shrimp & Chicken Combo 酱爆双丁",
+      "description": "A delicious combination of shrimp and chicken served with white rice; brown rice available for an additional $1.5.",
+      "price": "$13.50",
+      "image": ""
+    },
+    {
+      "name": "Triple Delight 炒三鲜",
+      "description": "A delightful mix of three different types of meat served with white rice; brown rice available for an additional $1.5.",
+      "price": "$14.95",
+      "image": ""
+    },
+    {
+      "name": "Dragon & Phoenix Chicken 龙凤配",
+      "description": "Jumbo shrimp and sliced white meat chicken with mixed vegetables in brown sauce, served with white rice; brown rice available for an additional $1.5.",
+      "price": "$14.95",
+      "image": ""
+    },
+    {
+      "name": "Happy Family 全家福",
+      "description": "A special mix of meats and vegetables served with white rice; brown rice available for an additional $1.5.",
+      "price": "$15.95",
+      "image": ""
+    },
+    {
+      "name": "Seafood Delight 海鲜大烩",
+      "description": "A delightful mix of seafood served with white rice; brown rice available for an additional $1.5.",
+      "price": "$15.95",
+      "image": ""
+    },
+    {
+      "name": "Crispy Shrimp 脆皮虾",
+      "description": "Jumbo shrimp, quickly fried in light heat to ensure its crispness & flavor, sautéed immediately with Chinese vegetables in our Chef's special tangy sauce, served with white rice; brown rice available for an additional $1.5.",
+      "price": "$15.95",
+      "image": ""
+    },
+    {
+      "name": "Five 'O 五福临门",
+      "description": "Shrimp, scallops, chicken, beef, roast pork with broccoli and baby corn, green peppers, mushrooms with garlic sauce, served with white rice; brown rice available for an additional $1.5.",
+      "price": "$15.95",
+      "image": ""
+    },
+    {
+      "name": "Orange Beef 陈皮牛",
+      "description": "Savory orange beef served with white rice; brown rice available for an additional $1.5.",
+      "price": "$14.95",
+      "image": ""
+    },
+    {
+      "name": "Jumbo Shrimp w/ Black Mushrooms 蘑菇大虾",
+      "description": "Jumbo shrimp with black mushrooms, snow peas, water chestnuts, red carrots in white sauce, served with white rice; brown rice available for an additional $1.5.",
+      "price": "$15.95",
+      "image": ""
+    },
+    {
+      "name": "Singapore Mei Fun (No Rice) 星州米粉",
+      "description": "Flavorful Singapore Mei Fun with thin rice noodles; no rice included.",
+      "price": "$12.95",
+      "image": ""
+    },
+    {
+      "name": "Sweet & Sour Combo 甜酸三宝",
+      "description": "A delicious combination of sweet and sour chicken, pork, and shrimp served with white rice; brown rice available for an additional $1.5.",
+      "price": "$12.95",
+      "image": ""
+    },
+    {
+      "name": "Mei Fun (Thin Rice Noodles; No Rice) 炒米粉",
+      "description": "Choice of chicken, fresh pork, beef, or shrimp with thin rice noodles; no rice included.",
+      "price": "$11.50",
+      "image": ""
+    }
+  ],
+
+  "Chicken": [
+    {
+      "name": "Chicken w. Broccoli 芥兰鸡片",
+      "description": "Tender chicken with broccoli served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Moo Goo Gai Pan 蘑菇鸡片",
+      "description": "Sliced chicken with vegetables and mushrooms, served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Sweet Sour Chicken 甜酸鸡",
+      "description": "Delicious sweet and sour chicken served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Chicken w. Cashew Nuts 腰果鸡",
+      "description": "Flavorful chicken with cashew nuts served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Curry Chicken w. Onion 咖喱鸡",
+      "description": "Savory curry chicken with onion served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Chicken w. Almonds 杏仁鸡",
+      "description": "Tender chicken with almonds served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Chicken w. Eggplant 茄子鸡",
+      "description": "Flavorful chicken with eggplant served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Honey Chicken 蜜糖鸡",
+      "description": "Delicious honey chicken served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Chicken w. Snow Peas 雪豆鸡",
+      "description": "Savory chicken with snow peas served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Fried Boneless Chicken w. Vegetable 无骨鸡",
+      "description": "Crispy fried boneless chicken with vegetables served with white rice; brown rice available for an additional $1.5.",
+      "price": "$13.25",
+      "image": ""
+    },
+    {
+      "name": "Fried Lemon Chicken 柠檬鸡",
+      "description": "Delicious fried lemon chicken served with white rice; brown rice available for an additional $1.5.",
+      "price": "$13.25",
+      "image": ""
+    },
+    {
+      "name": "Moo Shu Chicken 木须鸡",
+      "description": "Tasty moo shu chicken served with pancakes; no rice included.",
+      "price": "$13.25",
+      "image": ""
+    },
+    {
+      "name": "Chicken w. Garlic Sauce 鱼香鸡",
+      "description": "Flavorful chicken with garlic sauce served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Chicken Szechuan Style 四川鸡",
+      "description": "Spicy and savory chicken in Szechuan style served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Kung Pao Chicken 宫保鸡",
+      "description": "Delicious Kung Pao chicken served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Hunan Chicken 湖南鸡",
+      "description": "Savory chicken in Hunan style served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    },
+    {
+      "name": "Chicken w. Mix Vegetable 杂菜鸡",
+      "description": "Flavorful chicken with mixed vegetables served with white rice; brown rice available for an additional $1.5.",
+      "price": "$8.75",
+      "image": ""
+    }
+  ],
+
+  "Special Chinese American Dishes": [
+    {
+      "name": "Fried Chicken Wings (6pcs) 炸鸡翅",
+      "description": "Crispy fried chicken wings served in regular, honey garlic, or spicy garlic flavor for an additional $1.",
+      "price": "$7.95",
+      "image": ""
+    }
+  ],
+
+  "Dinner Specials": [
+    {
+      "name": "Chicken Chow Mein 鸡炒面",
+      "description": "Served w. Wonton or Egg Drop Soup, or Can Soda, Roast Pork Fried Rice & Egg Roll.",
+      "price": "$11.95",
+      "notes": "Best Chicken Chow Mein in Deerfield Beach, FL"
+    },
+    {
+      "name": "Roast Pork Chow Mein 叉烧炒面",
+      "description": "Savory roast pork with stir-fried noodles.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Diced Chicken w. Cashew Nuts 腰果鸡",
+      "description": "Tender chicken pieces mixed with crunchy cashew nuts.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Shrimp Chow Mein 虾炒面",
+      "description": "Delicious shrimp stir-fried with noodles and vegetables.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Beef Chow Mein 牛炒面",
+      "description": "Succulent beef slices stir-fried with noodles and vegetables.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Moo Goo Gai Pan 蘑菇鸡片",
+      "description": "Sliced Chicken with vegetable and mushroom.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Pepper Steak w. Onion 青椒牛",
+      "description": "Beef stir-fried with peppers and onions.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Chicken Egg Foo Young 鸡蓉蛋",
+      "description": "Classic Chinese omelet with chicken.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Roast Pork Egg Foo Young 叉烧蓉蛋",
+      "description": "Classic Chinese omelet with roast pork.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Chicken w. Broccoli 芥兰鸡片",
+      "description": "Tender chicken stir-fried with broccoli.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Sweet & Sour Chicken 甜酸鸡",
+      "description": "Crispy chicken in sweet and sour sauce.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Sweet & Sour Pork 甜酸肉",
+      "description": "Crispy pork in sweet and sour sauce.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Chicken Lo Mein 鸡捞面",
+      "description": "Stir-fried noodles with chicken and vegetables.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Roast Pork Lo Mein 叉烧捞面",
+      "description": "Stir-fried noodles with roast pork and vegetables.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Beef w. Broccoli 芥兰牛",
+      "description": "Beef stir-fried with broccoli.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Chicken Garlic Sauce 鱼香鸡片",
+      "description": "Chicken stir-fried in garlic sauce.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Pork w. Garlic Sauce 鱼香肉丝",
+      "description": "Pork stir-fried in garlic sauce.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Hot Spicy Shrimp 干烧虾",
+      "description": "Spicy shrimp stir-fry.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Chicken Szechuan Style 四川鸡片",
+      "description": "Spicy Szechuan-style chicken.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Pork Szechuan Style 四川肉丝",
+      "description": "Spicy Szechuan-style pork.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Shrimp w. Lobster Sauce 虾龙糊",
+      "description": "Shrimp cooked in a rich lobster sauce.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Boneless Spare Ribs 无骨排",
+      "description": "Tender boneless spare ribs.",
+      "price": "$12.95",
+      "notes": ""
+    },
+    {
+      "name": "General Tso's Chicken 左宗鸡",
+      "description": "Crispy chicken in a tangy sauce.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Sesame Chicken 芝麻鸡",
+      "description": "Crispy chicken with sesame sauce.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Chicken w. Mix Vegetable 杂菜鸡片",
+      "description": "Chicken stir-fried with mixed vegetables.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Pork w. Mix Vegetable 杂菜叉烧",
+      "description": "Pork stir-fried with mixed vegetables.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Shrimp w. Broccoli 芥兰虾",
+      "description": "Shrimp stir-fried with broccoli.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Shrimp w. Mix Vegetable 杂菜虾",
+      "description": "Shrimp stir-fried with mixed vegetables.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Curry Chicken w. Onion 咖喱鸡片",
+      "description": "Chicken cooked with curry and onions.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Kung Pao Chicken 宫保鸡丁",
+      "description": "Spicy stir-fry chicken with peanuts.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Shrimp Lo Mein 虾捞面",
+      "description": "Stir-fried noodles with shrimp.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Beef Lo Mein 牛捞面",
+      "description": "Stir-fried noodles with beef.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Spare Ribs 排骨",
+      "description": "Tender spare ribs.",
+      "price": "$12.95",
+      "notes": ""
+    },
+    {
+      "name": "Honey Garlic Chicken 蜜蒜鸡",
+      "description": "Chicken cooked in honey garlic sauce.",
+      "price": "$11.95",
+      "notes": ""
+    },
+    {
+      "name": "Chicken Wings (6) 炸鸡翅",
+      "description": "Regular; honey garlic or spicy garlic flavor for an additional $1.",
+      "price": "$11.95",
+      "notes": ""
+    }
+  ],
+
+  "Family Special": [
+    {
+      "name": "Family Pack 家庭套餐",
+      "description": "Served w. Lg. Wonton or Egg Drop Soup, Lg. Pork Fried Rice & Krab Rangoon (6) & your choice of 2 entrees from list.",
+      "price": "$34.95",
+      "notes": "Cannot be applied to coupon!"
+    }
+  ],
+
+"Kid's Meal Menu": [
+    {
+      "name": "Chicken Wings (4) 炸鸡翅",
+      "description": "Four crispy chicken wings served with French fries.",
+      "price": "$7.95",
+      "notes": ""
+    },
+    {
+      "name": "Fried Shrimp (10) 炸虾",
+      "description": "Ten delicious fried shrimp served with French fries.",
+      "price": "$7.95",
+      "notes": ""
+    },
+    {
+      "name": "BBQ Ribs (2) 排骨",
+      "description": "Two savory BBQ ribs served with French fries.",
+      "price": "$7.95",
+      "notes": ""
+    },
+    {
+      "name": "Chicken Teriyaki (2) 鸡肉串",
+      "description": "Two chicken teriyaki skewers served with French fries.",
+      "price": "$7.95",
+      "notes": ""
+    }
+  ],
+
+"Side Orders And Sauce": [
+    {
+      "name": "Steamed Rice 白饭",
+      "description": "Plain steamed rice.",
+      "price": "$2.25",
+      "notes": ""
+    },
+    {
+      "name": "Brown Rice 黄饭",
+      "description": "Healthy brown rice.",
+      "price": "$2.50",
+      "notes": ""
+    },
+    {
+      "name": "Fortune Cookies (Bag) 签语饼",
+      "description": "A bag of classic fortune cookies.",
+      "price": "$1.50",
+      "notes": ""
+    },
+    {
+      "name": "Crispy Noodles (Bag) 面干",
+      "description": "A bag of crunchy crispy noodles.",
+      "price": "$1.25",
+      "notes": ""
+    },
+    {
+      "name": "Dumpling Sauce 水饺汁",
+      "description": "Savory sauce for dumplings.",
+      "price": "$0.75",
+      "notes": ""
+    },
+    {
+      "name": "House mustard Sauce 芥末酱",
+      "description": "Spicy house mustard sauce.",
+      "price": "$0.75",
+      "notes": ""
+    },
+    {
+      "name": "Hot Oil 辣椒油",
+      "description": "Spicy hot oil.",
+      "price": "$0.75",
+      "notes": ""
+    },
+    {
+      "name": "Homemade Sauce",
+      "description": "Special homemade sauce.",
+      "price": "$2.50",
+      "notes": ""
+    }
+  ],
+
+"Drink And Sauce": [
+    {
+      "name": "Bottle Water 水",
+      "description": "A bottle of refreshing water.",
+      "price": "$1.50",
+      "notes": ""
+    },
+    {
+      "name": "Soda 汽水",
+      "description": "A can of soda.",
+      "price": "$1.50",
+      "notes": ""
     }
   ]
+
 }
