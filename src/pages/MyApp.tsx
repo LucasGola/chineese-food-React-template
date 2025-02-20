@@ -19,7 +19,7 @@ const MyApp = () => {
 
   return (
     <>
-      <Navigation />
+      <Navigation language={language || 'en'} />
       <Hero />
       <About />
       <Delivery />

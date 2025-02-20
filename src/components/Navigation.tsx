@@ -2,15 +2,26 @@ import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import redDragonLogo from '../assets/images/red-dragon-logo2.png';
+import { navigateToBestRoute, useScrollToSection } from '../utils/scrollHelper';
 
-const Navigation = () => {
+interface Props {
+  language: string;
+}
+
+const Navigation: React.FC<Props> = ({ language }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = React.useState(false);
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const { language } = useParams();
+  const location = useLocation();
+  useScrollToSection();
+
+  const availableRoutes = [
+    { path: `/${language}`, type: 'default' },
+    { path: `/${language}/menu`, type: 'menu' },
+  ];
 
   const menuItems = [
     { key: 'home', label: t('home') },
@@ -49,15 +60,14 @@ const Navigation = () => {
   const currentLanguage =
     languages.find((lang) => lang.code === language) || languages[0];
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId.toLowerCase());
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-    setIsOpen(false);
+  const handleNavigation = (sectionId?: string) => {
+    navigateToBestRoute(
+      navigate,
+      sectionId,
+      location.pathname,
+      availableRoutes,
+      `/${language}`,
+    );
   };
 
   const changeLanguage = (lng: string) => {
@@ -106,7 +116,7 @@ const Navigation = () => {
                   key={item.key}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  onClick={() => scrollToSection(item.key)}
+                  onClick={() => handleNavigation(item.key)}
                   className='text-gray-800 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium'
                 >
                   {item.label}
@@ -190,7 +200,7 @@ const Navigation = () => {
             {menuItems.map((item) => (
               <button
                 key={item.key}
-                onClick={() => scrollToSection(item.key)}
+                onClick={() => handleNavigation(item.key)}
                 className='text-gray-800 hover:text-red-600 block w-full text-left px-3 py-2 rounded-md text-base font-medium'
               >
                 {item.label}

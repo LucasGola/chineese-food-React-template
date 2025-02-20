@@ -1,10 +1,13 @@
+import { useParams } from 'react-router-dom';
 import Menu from '../components/Menu';
 import Navigation from '../components/Navigation';
 
 const MenuPage = () => {
+  const { language } = useParams();
+
   return (
     <div>
-      <Navigation />
+      <Navigation language={language || 'en'} />
       <Menu />
     </div>
   );
