@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, MapPin } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   return (
     <section
@@ -32,13 +34,8 @@ const Hero = () => {
                 whileTap={{ scale: 0.95 }}
                 className='bg-red-600 text-white px-8 py-3 rounded-full flex items-center justify-center space-x-2 hover:bg-red-700 transition-colors'
                 onClick={() => {
-                  const element = document.getElementById('menu');
-                  if (element) {
-                    element.scrollIntoView({
-                      behavior: 'smooth',
-                      block: 'start',
-                    });
-                  }
+                  const route = window.location.pathname;
+                  navigate(`${route}/menu`);
                 }}
               >
                 <span>{t('order')}</span>

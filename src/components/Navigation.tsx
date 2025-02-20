@@ -62,8 +62,9 @@ const Navigation = () => {
 
   const changeLanguage = (lng: string) => {
     if (lng !== i18n.language) {
+      const route = window.location.pathname.replace(i18n.language, lng);
       i18n.changeLanguage(lng);
-      navigate(`/${lng}`);
+      navigate(route);
     }
   };
 
