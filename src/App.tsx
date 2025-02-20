@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react';
 import { I18nextProvider } from 'react-i18next';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useParams,
+} from 'react-router-dom';
 import i18n from '../i18n';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -11,7 +17,7 @@ import Menu from './components/Menu';
 import Navigation from './components/Navigation';
 import getLanguages from './utils/getLanguages';
 
-export default function App() {
+const App = () => {
   const [lngs, setLngs] = useState<string[]>([]);
 
   useEffect(() => {
@@ -28,37 +34,39 @@ export default function App() {
   }
 
   return (
-    <BrowserRouter>
-      <Routes>
-        {lngs.map((lng) => (
-          <Route path={`/${lng}`} element={<MyApp lng={lng} />} key={lng} />
-        ))}
-        <Route path='/' element={<Navigate replace to='/en' />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
-
-const MyApp: React.FC<MyAppProps> = ({ lng }) => {
-  useEffect(() => {
-    i18n.changeLanguage(lng);
-  });
-
-  return (
     <I18nextProvider i18n={i18n}>
-      <div className='min-h-screen bg-white'>
-        <Navigation />
-        <Hero />
-        <About />
-        <Menu />
-        <Delivery />
-        <Contact />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <div className='min-h-screen bg-white'>
+          <Routes>
+            <Route path='/:language' element={<MyApp />} />
+            <Route path='/' element={<Navigate replace to='/en' />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </I18nextProvider>
   );
 };
 
-interface MyAppProps {
-  lng: string;
-}
+const MyApp = () => {
+  const { language } = useParams();
+
+  useEffect(() => {
+    if (language) {
+      i18n.changeLanguage(language);
+    }
+  }, [language]);
+
+  return (
+    <>
+      <Navigation />
+      <Hero />
+      <About />
+      <Menu />
+      <Delivery />
+      <Contact />
+      <Footer />
+    </>
+  );
+};
+
+export default App;

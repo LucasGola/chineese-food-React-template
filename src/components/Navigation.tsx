@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import redDragonLogo from '../assets/images/red-dragon-logo2.png';
 
 const Navigation = () => {
@@ -10,6 +10,7 @@ const Navigation = () => {
   const [isLangMenuOpen, setIsLangMenuOpen] = React.useState(false);
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
+  const { language } = useParams();
 
   const menuItems = [
     { key: 'home', label: t('home') },
@@ -46,7 +47,7 @@ const Navigation = () => {
   ];
 
   const currentLanguage =
-    languages.find((lang) => lang.code === i18n.language) || languages[0];
+    languages.find((lang) => lang.code === language) || languages[0];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId.toLowerCase());
@@ -65,6 +66,13 @@ const Navigation = () => {
       navigate(`/${lng}`);
     }
   };
+
+  useEffect(() => {
+    if (language && language !== i18n.language) {
+      i18n.changeLanguage(language);
+      changeLanguage(language);
+    }
+  }, [language, i18n.language]);
 
   return (
     <nav className='fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm'>
@@ -238,18 +246,6 @@ const Navigation = () => {
                 </motion.div>
               )}
             </motion.div>
-            {/* <div className='flex flex-col items-stretch space-y-2 px-3 py-2'>
-              {languages.map((lang) => (
-                <button
-                  key={lang.code}
-                  onClick={() => changeLanguage(lang.code)}
-                  className='flex items-center space-x-2 px-4 py-2 text-base text-gray-800 hover:bg-gray-100 w-full'
-                >
-                  <img src={lang.flag} alt={lang.name} className='w-6 h-5' />
-                  <span>{lang.name}</span>
-                </button>
-              ))}
-            </div> */}
           </div>
         </motion.div>
       )}
