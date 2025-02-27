@@ -184,37 +184,37 @@
       "name": "Chicken Chow Mein 鸡肉炒面",
       "description": "Flavorful chow mein with tender chicken and stir-fried vegetables.",
       "price": "$6.95",
-      "image": ""
+      "image": "https://butteroverbae.com/wp-content/uploads/2019/02/easy-chicken-chow-mein-recipe-10.jpg"
     },
     {
       "name": "Roast Pork Chow Mein 叉烧炒面",
       "description": "Savory chow mein with roast pork and vegetables.",
       "price": "$6.95",
-      "image": ""
+      "image": "https://images.getrecipekit.com/20230214160025-shanghai-20chow-20mein.png?aspect_ratio=4:3&quality=90&"
     },
     {
       "name": "Beef Chow Mein 牛肉炒面",
       "description": "Delicious chow mein with succulent beef and stir-fried vegetables.",
       "price": "$7.25",
-      "image": ""
+      "image": "https://www.recipetineats.com/tachyon/2023/07/Beef-chow-mein_5.jpg"
     },
     {
       "name": "Shrimp Chow Mein 虾炒面",
       "description": "Savory chow mein with succulent shrimp and stir-fried vegetables.",
       "price": "$7.25",
-      "image": ""
+      "image": "https://vikalinka.com/wp-content/uploads/2021/05/Shrimp-Chow-Mein-18-Edit.jpg"
     },
     {
       "name": "Vegetable Chow Mein 菜炒面",
       "description": "Nutritious chow mein with a mix of fresh vegetables.",
       "price": "$6.95",
-      "image": ""
+      "image": "https://www.pipercooks.com/wp-content/uploads/2019/12/vegetable-chow-mein-pipercooks-3.jpg"
     },
     {
       "name": "House Special Chow Mein 本楼炒面",
       "description": "Chef's special chow mein with a mix of meats and vegetables.",
       "price": "$7.50",
-      "image": ""
+      "image": "https://mediavine-res.cloudinary.com/image/upload/s--o8luBTUb--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1689438228/pwqt8fi6mn79qnke5occ.jpg"
     }
   ],
 
@@ -223,37 +223,37 @@
       "name": "Roast Pork Lo Mein 叉烧捞面",
       "description": "Delicious lo mein noodles with savory roast pork.",
       "price": "$6.95",
-      "image": ""
+      "image": "https://i.pinimg.com/736x/13/5e/7c/135e7cb69a698fe2c362548fb1af4ef4.jpg"
     },
     {
       "name": "Chicken Lo Mein 鸡肉捞面",
       "description": "Tasty lo mein noodles with tender chicken pieces.",
       "price": "$6.95",
-      "image": ""
+      "image": "https://images.getrecipekit.com/20221203144456-chicken-lo-mein.jpg?aspect_ratio=1:1&quality=90&"
     },
     {
       "name": "Beef Lo Mein 牛肉捞面",
       "description": "Flavorful lo mein noodles with succulent beef slices.",
       "price": "$7.25",
-      "image": ""
+      "image": "https://www.seriouseats.com/thmb/BOUvnz3OmQaVp_de4YohOLv_QYc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/stir-fried-lo-mein-beef-broccoli-recipe-hero_1-fb1583fd219b4cb584af022fb9d2f2e8.JPG"
     },
     {
       "name": "Shrimp Lo Mein 虾捞面",
       "description": "Satisfying lo mein noodles with juicy shrimp.",
       "price": "$7.25",
-      "image": ""
+      "image": "https://www.spendwithpennies.com/wp-content/uploads/2020/07/Shrimp-Lo-Mein-SpendWithPennies-6.jpg"
     },
     {
       "name": "Vegetable Lo Mein 菜捞面",
       "description": "Nutritious lo mein noodles with fresh vegetables.",
       "price": "$6.95",
-      "image": ""
+      "image": "https://cdn.sanity.io/images/2r0kdewr/production/9a9969820b0f037b9b56a86eb70784e2fe1db344-3936x2216.jpg"
     },
     {
       "name": "House Special Lo Mein 本楼捞面",
       "description": "Special lo mein noodles with a mix of meats and vegetables.",
       "price": "$7.50",
-      "image": ""
+      "image": "https://i.ytimg.com/vi/ZT9LSsNXXe0/maxresdefault.jpg"
     }
   ],
 
@@ -262,37 +262,37 @@
       "name": "Roast Pork Egg Foo Young 叉烧蓉蛋",
       "description": "Savory egg foo young with tender roast pork.",
       "price": "$10.95",
-      "image": ""
+      "image": "https://thewoksoflife.com/wp-content/uploads/2024/09/roast-pork-egg-foo-young-14-500x375.jpg"
     },
     {
       "name": "Chicken Egg Foo Young 鸡肉蓉蛋",
       "description": "Delicious egg foo young with flavorful chicken.",
       "price": "$10.95",
-      "image": ""
+      "image": "https://thewoksoflife.com/wp-content/uploads/2016/06/egg-foo-yung-14.jpg"
     },
     {
       "name": "Beef Egg Foo Young 牛肉蓉蛋",
       "description": "Hearty egg foo young with succulent beef.",
       "price": "$11.95",
-      "image": ""
+      "image": "https://static01.nyt.com/images/2023/08/10/multimedia/kc-egg-foo-young-zmtq/kc-egg-foo-young-zmtq-videoSixteenByNineJumbo1600.jpg"
     },
     {
       "name": "Shrimp Egg Foo Young 虾蓉蛋",
       "description": "Tasty egg foo young with juicy shrimp.",
       "price": "$11.95",
-      "image": ""
+      "image": "https://www.thespruceeats.com/thmb/Amcj2GJVgFEoy17--hbBGoAKkJ0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/egg-foo-yung-restaurant-style-694558-hero-01-b4a24a516bfc4a539d6d22a1518bbcbe.jpg"
     },
     {
       "name": "Vegetable Egg Foo Young 菜蓉蛋",
       "description": "Nutritious egg foo young with fresh vegetables.",
       "price": "$10.95",
-      "image": ""
+      "image": "https://omnivorescookbook.com/wp-content/uploads/2019/03/1903_Easy-Egg-Foo-Young_800.jpg"
     },
     {
       "name": "House Special Egg Foo Young 本楼蓉蛋",
       "description": "Special egg foo young with a mix of meats and vegetables.",
       "price": "$12.95",
-      "image": ""
+      "image": "https://athomewithrebecka.com/chicken-egg-foo-yung-recipe/chxeggfooyoung2/"
     }
   ],
 
@@ -301,37 +301,37 @@
       "name": "Mixed Vegetables 素什锦",
       "description": "A mix of fresh vegetables served with white rice; brown rice available for an additional $1.5.",
       "price": "$6.50",
-      "image": ""
+      "image": "https://i.ytimg.com/vi/q_BcVP6VNYc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDyyz9Mr0-wI8gis6oFnuGAf_I2mg"
     },
     {
       "name": "Broccoli w. Garlic Sauce 鱼香芥兰",
       "description": "Tender broccoli cooked with savory garlic sauce, served with white rice; brown rice available for an additional $1.5.",
       "price": "$6.50",
-      "image": ""
+      "image": "https://thewoksoflife.com/wp-content/uploads/2017/03/broccoli-garlic-sauce-8-1.jpg"
     },
     {
       "name": "Eggplant w. Garlic Sauce 鱼香茄子",
       "description": "Flavorful eggplant cooked with garlic sauce, served with white rice; brown rice available for an additional $1.5.",
       "price": "$6.50",
-      "image": ""
+      "image": "https://img.apmcdn.org/43ab8042979f8faa0c4fc115bee66ba377fbbe9d/uncropped/41171c-20230221-wnk-chinese-eggplant-with-garlic-sauce-dish-2000.jpg"
     },
     {
       "name": "Ma Po Tofu 麻婆豆腐",
       "description": "Spicy and savory tofu dish, served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.95",
-      "image": ""
+      "image": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2F2023-05-mapo-tofu%2Fmapo-tofu-017"
     },
     {
       "name": "Moo Shu Veg 木须菜",
       "description": "Vegetable stir-fry served with pancakes; no rice included.",
       "price": "$11.95",
-      "image": ""
+      "image": "https://loveandgoodstuff.com/wp-content/uploads/2020/11/moo-shu-vegetables-1200x1200-1.jpg"
     },
     {
       "name": "Bean Curd Hunan Style (Fried) 湖南豆腐",
       "description": "Fried bean curd cooked in Hunan style, served with white rice; brown rice available for an additional $1.5.",
       "price": "$11.95",
-      "image": ""
+      "image": "https://thewoksoflife.com/wp-content/uploads/2017/10/spiced-tofu-stir-fry-3.jpg"
     }
   ],
 
@@ -340,37 +340,37 @@
       "name": "Roast Pork Fried Rice 叉烧炒饭",
       "description": "Flavorful fried rice with savory roast pork.",
       "price": "$6.25",
-      "image": ""
+      "image": "https://assets.epicurious.com/photos/578e76951edb4f17303e3f22/master/w_1000,h_644,c_limit/pork-fried-rice.jpg"
     },
     {
       "name": "Chicken Fried Rice 鸡肉炒饭",
       "description": "Tasty fried rice with tender chicken pieces.",
       "price": "$6.25",
-      "image": ""
+      "image": "https://omnivorescookbook.com/wp-content/uploads/2023/11/200408_Chicken-Fried-Rice_550.jpg"
     },
     {
       "name": "Beef Fried Rice 牛肉炒饭",
       "description": "Delicious fried rice with succulent beef slices.",
       "price": "$6.95",
-      "image": ""
+      "image": "https://thewoksoflife.com/wp-content/uploads/2016/01/beef-fried-rice-5-1.jpg"
     },
     {
       "name": "Shrimp Fried Rice 虾炒饭",
       "description": "Satisfying fried rice with juicy shrimp.",
       "price": "$6.95",
-      "image": ""
+      "image": "https://thewoksoflife.com/wp-content/uploads/2017/01/shrimp-fried-rice-2-1.jpg"
     },
     {
       "name": "Vegetable Fried Rice 菜炒饭",
       "description": "Nutritious fried rice with a mix of fresh vegetables.",
       "price": "$6.25",
-      "image": ""
+      "image": "https://www.whiskaffair.com/wp-content/uploads/2018/11/Vegetable-Fried-Rice-2-3.jpg"
     },
     {
       "name": "House Special Fried Rice 本楼炒饭",
       "description": "Special fried rice with a mix of meats and vegetables.",
       "price": "$7.25",
-      "image": ""
+      "image": "https://maesmenu.com/wp-content/uploads/2020/09/special-fried-rice_-105.jpg"
     }
   ],
 
@@ -379,61 +379,61 @@
       "name": "Roast Pork w. Mix Vegetable 叉烧杂菜",
       "description": "Savory roast pork with mixed vegetables served with white rice; brown rice available for an additional $1.5.",
       "price": "$8.75",
-      "image": ""
+      "image": "https://thewoksoflife.com/wp-content/uploads/2016/11/roast-pork-chinese-vegetables-9.jpg"
     },
     {
       "name": "Roast Pork w. Broccoli 叉烧芥兰",
       "description": "Tender roast pork with broccoli served with white rice; brown rice available for an additional $1.5.",
       "price": "$8.75",
-      "image": ""
+      "image": "https://pekingexpresscatering.com/cdn/shop/files/67.RoastPorkw.Broccoli.jpg?v=1725132032&width=1946"
     },
     {
       "name": "Sweet Sour Pork 甜酸肉",
       "description": "Delicious sweet and sour pork served with white rice; brown rice available for an additional $1.5.",
       "price": "$8.75",
-      "image": ""
+      "image": "https://cdn.sanity.io/images/2r0kdewr/production/0bc6f529c1200c84a8465d9317c3029898a4d4fa-1500x844.jpg"
     },
     {
       "name": "Roast Pork w. Black Bean Sauce 豆什叉烧",
       "description": "Flavorful roast pork with black bean sauce served with white rice; brown rice available for an additional $1.5.",
       "price": "$8.75",
-      "image": ""
+      "image": "https://i.ytimg.com/vi/trRDQfsZLBs/maxresdefault.jpg"
     },
     {
       "name": "Roast Pork w. Snow Peas 雪豆叉烧",
       "description": "Savory roast pork with snow peas served with white rice; brown rice available for an additional $1.5.",
       "price": "$8.75",
-      "image": ""
+      "image": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k/archive/6d0da773a55cd0283002dd3522a44b4a5e65cf89"
     },
     {
       "name": "Shredded Pork w. Scallions 葱爆肉",
       "description": "Delicious shredded pork with scallions served with white rice; brown rice available for an additional $1.5.",
       "price": "$13.25",
-      "image": ""
+      "image": "https://omnivorescookbook.com/wp-content/uploads/2022/03/211230_Shredded-Pork-with-Garlic-Sauce_550-500x375.jpg"
     },
     {
       "name": "Shredded Pork w. Garlic Sauce 鱼香肉",
       "description": "Flavorful shredded pork with garlic sauce served with white rice; brown rice available for an additional $1.5.",
       "price": "$8.75",
-      "image": ""
+      "image": "https://www.yumofchina.com/wp-content/uploads/2018/03/Shredded-Pork-with-Garlic-Sauce3.jpg"
     },
     {
       "name": "Shredded Pork w. Szechuan Style 四川肉",
       "description": "Spicy and savory shredded pork in Szechuan style served with white rice; brown rice available for an additional $1.5.",
       "price": "$8.75",
-      "image": ""
+      "image": "https://hillstreetgrocer.com/application/files/6616/7807/8256/Chinese-sichuan-shredded-pork-with-vegetables.-Asian-cuisine-1400083524_5045x3363_-_Copy.jpeg"
     },
     {
       "name": "Roast Pork Hunan Style 湖南叉烧",
       "description": "Delicious roast pork in Hunan style served with white rice; brown rice available for an additional $1.5.",
       "price": "$8.75",
-      "image": ""
+      "image": "https://www.chinasichuanfood.com/wp-content/uploads/2014/10/Huan-pork-stir-fry-10-480x270.jpg"
     },
     {
       "name": "Moo Shu Pork 木须肉",
       "description": "Savory moo shu pork served with pancakes; no rice included.",
       "price": "$13.25",
-      "image": ""
+      "image": "https://www.jocooks.com/wp-content/uploads/2021/02/moo-shu-pork-1-13.jpg"
     }
   ],
 
@@ -442,67 +442,67 @@
       "name": "Pepper Steak w. Onion 青椒牛",
       "description": "Savory pepper steak with onion served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.50",
-      "image": ""
+      "image": "https://www.seriouseats.com/thmb/q2KRYqxpJx_H5BqRWuB9uD_wKfY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2012__06__20120610-stir-fry-grill-wok-21-2fe9b5e714af455d8c786a68ccff8a45.jpg"
     },
     {
       "name": "Beef w. Broccoli 芥兰牛",
       "description": "Tender beef with broccoli served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.50",
-      "image": ""
+      "image": "https://www.grocery.coop/sites/default/files/wp-content/uploads/2011/09/Chinese_Beef_and_Broccoli_0.jpg"
     },
     {
       "name": "Beef w. Mix Vegetable 杂菜牛",
       "description": "Flavorful beef with mixed vegetables served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.50",
-      "image": ""
+      "image": "https://thewoksoflife.com/wp-content/uploads/2018/03/beef-vegetable-stir-fry-5-1-480x270.jpg"
     },
     {
       "name": "Curry Beef w. Onion 咖喱牛",
       "description": "Delicious curry beef with onion served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.50",
-      "image": ""
+      "image": "https://www.rachelphipps.com/wp-content/uploads/2022/02/Chinese-Beef-Onion-Stir-Fry-1024x683.jpg"
     },
     {
       "name": "Beef w. Scallions 葱爆牛",
       "description": "Savory beef with scallions served with white rice; brown rice available for an additional $1.5.",
       "price": "$14.25",
-      "image": ""
+      "image": "https://thewoksoflife.com/wp-content/uploads/2015/10/scallion-beef-stir-fry-10.jpg"
     },
     {
       "name": "Beef w. Snow Peas 雪豆牛",
       "description": "Tender beef with snow peas served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.50",
-      "image": ""
+      "image": "https://www.cookingforkeeps.com/wp-content/uploads/2019/05/Crispy-Honey-Beef-with-Snow-Peas-7-1-720x720.jpg.webp"
     },
     {
       "name": "Beef w. Garlic Sauce 鱼香牛",
       "description": "Flavorful beef with garlic sauce served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.50",
-      "image": ""
+      "image": "https://www.mysugarfreekitchen.com/wp-content/uploads/2021/11/Beef-in-Garlic-Sauce-22.jpg"
     },
     {
       "name": "Beef Szechuan Style 四川牛",
       "description": "Spicy and savory beef in Szechuan style served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.50",
-      "image": ""
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgjVSdf2H-dhjgSuLLLvpUllH3houXAczU1Q&s"
     },
     {
       "name": "Hunan Beef 湖南牛",
       "description": "Delicious beef in Hunan style served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.50",
-      "image": ""
+      "image": "https://embed.widencdn.net/img/beef/xu6owwuuep/exact/szechuan-beef-stir-fry.tif?keep=c&u=7fueml"
     },
     {
       "name": "Moo Shu Beef 木须牛",
       "description": "Savory moo shu beef served with pancakes; no rice included.",
       "price": "$14.50",
-      "image": ""
+      "image": "https://art.whisk.com/image/upload/fl_progressive,h_600,w_800,c_fill/v1627047504/v3/user-recipes/yoq91dtjywjdlpdxgo6y.jpg"
     },
     {
       "name": "Beef Chow Fun (No Rice) 牛河粉",
       "description": "Delicious beef chow fun with flat noodles; no rice included.",
       "price": "$14.50",
-      "image": ""
+      "image": "https://i2.wp.com/hipfoodiemom.com/wp-content/uploads/2014/10/Beef-Chow-Fun_main-1.jpg"
     }
   ],
 
@@ -511,19 +511,19 @@
       "name": "Shrimp w. Broccoli 芥兰虾",
       "description": "Tender shrimp with broccoli served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.50",
-      "image": ""
+      "image": "https://cookingmadehealthy.com/wp-content/uploads/2018/04/Chinese-Shrimp-and-Broccoli-3.jpg"
     },
     {
       "name": "Shrimp w. Mix Vegetable 杂菜虾",
       "description": "Flavorful shrimp with mixed vegetables served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.50",
-      "image": ""
+      "image": "https://i.ytimg.com/vi/R1Oukmvv7LI/sddefault.jpg"
     },
     {
       "name": "Shrimp w. Lobster Sauce (Egg Sauce) 虾龙糊",
       "description": "Delicious shrimp with lobster sauce (egg sauce) served with white rice; brown rice available for an additional $1.5.",
       "price": "$9.50",
-      "image": ""
+      "image": "https://cdn.apartmenttherapy.info/image/upload/v1700245581/k/Photo/Recipes/2023-11-shrimp-with-lobster-sauce/shrimp-with-lobster-sauce-096.jpg"
     },
     {
       "name": "Shrimp w. Snow Peas 雪豆虾",
@@ -1070,7 +1070,7 @@
     }
   ],
 
-"Kid's Meal Menu": [
+  "Kid's Meal Menu": [
     {
       "name": "Chicken Wings (4) 炸鸡翅",
       "description": "Four crispy chicken wings served with French fries.",
@@ -1097,7 +1097,7 @@
     }
   ],
 
-"Side Orders And Sauce": [
+  "Side Orders And Sauce": [
     {
       "name": "Steamed Rice 白饭",
       "description": "Plain steamed rice.",
@@ -1148,7 +1148,7 @@
     }
   ],
 
-"Drink And Sauce": [
+  "Drink And Sauce": [
     {
       "name": "Bottle Water 水",
       "description": "A bottle of refreshing water.",
@@ -1162,5 +1162,4 @@
       "notes": ""
     }
   ]
-
 }
