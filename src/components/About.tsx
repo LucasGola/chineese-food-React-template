@@ -120,7 +120,7 @@ const About = () => {
                 href={
                   coordinates?.latitude && coordinates?.longitude
                     ? `https://www.google.com/maps/dir/${coordinates.latitude},+${coordinates.longitude}/25.930836809296476,+-80.16172132944378`
-                    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46902.47771744541!2d-80.19423692149226!3d25.928772705201457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9adb76345cf11%3A0xcfa42bdfe177ce36!2sHouse%20Of%20Chang%20Take%20Out!5e0!3m2!1spt-BR!2sbr!4v1739137112954!5m2!1spt-BR!2sbr"
+                    : "https://www.google.com/maps?ll=25.930849,-80.161719&z=11&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=14962132102592056886"
                 }
                 target="_blank"
                 rel="noopener noreferrer"
