@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { Clock, Facebook, Instagram, Twitter } from "lucide-react";
+import {
+  ExternalLink,
+  Clock,
+  Facebook,
+  Instagram,
+  Twitter,
+} from "lucide-react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
@@ -8,12 +15,26 @@ const About = () => {
     day: string;
     time: string;
   }[];
+  const [coordinates, setCoordinates] = useState<{
+    latitude: string;
+    longitude: string;
+  }>();
 
   const socialLinks = [
     { icon: Facebook, href: "#", label: "Facebook" },
     { icon: Instagram, href: "#", label: "Instagram" },
     { icon: Twitter, href: "#", label: "Twitter" },
   ];
+
+  navigator.geolocation.getCurrentPosition((position) => {
+    const latitudeUser = position.coords.latitude;
+    const longitudeUser = position.coords.longitude;
+
+    setCoordinates({
+      latitude: latitudeUser.toString(),
+      longitude: longitudeUser.toString(),
+    });
+  });
 
   return (
     <section id="about" className="py-20 bg-red-50">
@@ -91,9 +112,24 @@ const About = () => {
             viewport={{ once: true }}
             className="col-span-1 bg-white p-6 rounded-lg shadow-lg"
           >
-            <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">
-              {t("aboutCard3Title")}
-            </h3>
+            <div className="relative">
+              <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">
+                {t("aboutCard3Title")}
+              </h3>
+              <a
+                href={
+                  coordinates?.latitude && coordinates?.longitude
+                    ? `https://www.google.com/maps/dir/${coordinates.latitude},+${coordinates.longitude}/25.930836809296476,+-80.16172132944378`
+                    : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46902.47771744541!2d-80.19423692149226!3d25.928772705201457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9adb76345cf11%3A0xcfa42bdfe177ce36!2sHouse%20Of%20Chang%20Take%20Out!5e0!3m2!1spt-BR!2sbr!4v1739137112954!5m2!1spt-BR!2sbr"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-0 right-0"
+              >
+                <ExternalLink className="w-8 h-8 text-red-600" />
+              </a>
+            </div>
+
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46902.47771744541!2d-80.19423692149226!3d25.928772705201457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9adb76345cf11%3A0xcfa42bdfe177ce36!2sHouse%20Of%20Chang%20Take%20Out!5e0!3m2!1spt-BR!2sbr!4v1739137112954!5m2!1spt-BR!2sbr"
               width="100%"

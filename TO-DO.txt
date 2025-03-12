@@ -1,4 +1,3 @@
 layout simples
 menu de items
-?traçar rota para o local
 ?adicionar ao carrinho
