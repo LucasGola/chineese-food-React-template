@@ -3,8 +3,8 @@ import { Menu, X } from 'lucide-react';
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
-import redDragonLogo from '../assets/images/red-dragon-logo2.png';
 import { navigateToBestRoute, useScrollToSection } from '../utils/scrollHelper';
+import Cart from './Cart';
 
 interface Props {
   language: string;
@@ -17,6 +17,9 @@ const Navigation: React.FC<Props> = ({ language }) => {
   const navigate = useNavigate();
   const location = useLocation();
   useScrollToSection();
+
+  const redDragonLogo =
+    'https://banner2.cleanpng.com/20180513/fpq/avcdaf2x4.webp';
 
   const availableRoutes = [
     { path: `/${language}`, type: 'default' },
@@ -103,14 +106,8 @@ const Navigation: React.FC<Props> = ({ language }) => {
           </motion.div>
 
           {/* Desktop Menu */}
-          <div className='hidden md:flex'>
-            <div
-              className='ml-10 flex items-baseline space-x-4'
-              style={{
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}
-            >
+          <div className='hidden md:flex items-center'>
+            <div className='ml-10 flex items-center space-x-4'>
               {menuItems.map((item) => (
                 <motion.button
                   key={item.key}
@@ -124,17 +121,13 @@ const Navigation: React.FC<Props> = ({ language }) => {
               ))}
 
               {/* Language Selector Drop-down */}
-              <motion.div>
+              <motion.div className='relative'>
                 <motion.button
                   key={'language'}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
                   className='text-gray-800 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium flex items-center space-x-2'
-                  style={{
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                  }}
                 >
                   <img
                     src={currentLanguage.flag}
@@ -149,7 +142,7 @@ const Navigation: React.FC<Props> = ({ language }) => {
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
-                    className='absolute bg-white shadow-md rounded-md mt-2 z-10 max-h-80 overflow-y-auto'
+                    className='absolute right-0 mt-2 bg-white shadow-md rounded-md z-10 max-h-80 overflow-y-auto'
                   >
                     {languages.map((lang, index) => (
                       <motion.button
@@ -174,11 +167,15 @@ const Navigation: React.FC<Props> = ({ language }) => {
                   </motion.div>
                 )}
               </motion.div>
+
+              {/* Cart */}
+              <Cart />
             </div>
           </div>
 
           {/* Mobile menu button */}
-          <div className='md:hidden'>
+          <div className='md:hidden flex items-center space-x-4'>
+            <Cart />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className='inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-red-600'
@@ -214,10 +211,6 @@ const Navigation: React.FC<Props> = ({ language }) => {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
                 className='text-gray-800 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium flex items-center space-x-2'
-                style={{
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                }}
               >
                 <img
                   src={currentLanguage.flag}
@@ -232,7 +225,7 @@ const Navigation: React.FC<Props> = ({ language }) => {
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className='absolute bg-white shadow-md rounded-md mt-2 z-10 max-h-40 overflow-y-auto'
+                  className='bg-white shadow-md rounded-md mt-2 z-10 max-h-40 overflow-y-auto'
                 >
                   {languages.map((lang, index) => (
                     <motion.button
